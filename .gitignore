@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Node
+node/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+python/.venv/
+
+# Java
+java/target/
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store

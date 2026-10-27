@@ -1,0 +1,372 @@
+[
+  {
+    "email": "alice.johnson@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Alice",
+    "family_name": "Johnson",
+    "name": "Alice Johnson",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "f98bd30cc1d23238852c9f08f59bc4933360b90f4ebb33fdcbc703fbf30753d0",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_001_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-001"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "X4OKKZGKEA3D2LUCDXL6WYYYMSSU3WNZ"
+        }
+      }
+    ]
+  },
+  {
+    "email": "bob.smith@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Bob",
+    "family_name": "Smith",
+    "name": "Bob Smith",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "203dd87b55eade5cf24374c792671c94c94a4f0f7c78d9154cb295e05b051ccc",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_002_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-002"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "VMF4HS3U4QIW277GLBEC6BRLZRQUBOSF"
+        }
+      }
+    ]
+  },
+  {
+    "email": "carol.white@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Carol",
+    "family_name": "White",
+    "name": "Carol White",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "57f5a0cac678bc6c50976b7ed4d54451028fcca2269d569ca0da0e5205fe856d",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_003_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-003"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "IWEKC64FMELOIWVFNYVWZKWCVNLGCXBX"
+        }
+      }
+    ]
+  },
+  {
+    "email": "david.brown@acme-corp.com",
+    "email_verified": true,
+    "given_name": "David",
+    "family_name": "Brown",
+    "name": "David Brown",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "75ea2d7d9ccd401e0d031e23f65a0280cf2a9f5ec419c859130127f948ee8109",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_004_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-004"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "email": {
+          "value": "david.brown@acme-corp.com"
+        }
+      }
+    ]
+  },
+  {
+    "email": "eve.davis@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Eve",
+    "family_name": "Davis",
+    "name": "Eve Davis",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "bdf2f8d84ab5d0e68c3fb4edfdd8e4c118eee5676ef71ce6ef6cf0ae002e54ac",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_005_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-005"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "email": {
+          "value": "eve.davis@acme-corp.com"
+        }
+      }
+    ]
+  },
+  {
+    "email": "frank.miller@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Frank",
+    "family_name": "Miller",
+    "name": "Frank Miller",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "92e368988531423119e075108bf691594bf91d4ddf720af1c78c6a8e2b311f79",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_006_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-006"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "phone": {
+          "value": "+18142512132"
+        }
+      }
+    ]
+  },
+  {
+    "email": "grace.wilson@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Grace",
+    "family_name": "Wilson",
+    "name": "Grace Wilson",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "89d662e2ce3347e4e1094aec2287366b078e068cef51eb6d7a51ca93f45bd2c4",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_007_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-007"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "phone": {
+          "value": "+12125550007"
+        }
+      }
+    ]
+  },
+  {
+    "email": "henry.moore@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Henry",
+    "family_name": "Moore",
+    "name": "Henry Moore",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "564924df135604f6ec38fcb2eeecc997962e597ada25583c19dcba7092ac00c9",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_008_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-008"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "PFVOYWOFQS3K7Z2Y7VLDZ3NXNS6A5NNU"
+        }
+      },
+      {
+        "email": {
+          "value": "henry.moore@acme-corp.com"
+        }
+      }
+    ]
+  },
+  {
+    "email": "irene.taylor@acme-corp.com",
+    "email_verified": true,
+    "given_name": "Irene",
+    "family_name": "Taylor",
+    "name": "Irene Taylor",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "d6b7f09d8a50300ceec44103595cfa8d64a8400c8469e0893255aec71e110aa6",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_009_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-009"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "4FH6RU433XWLTGF7Z3SRH7OKFXWEWBJO"
+        }
+      },
+      {
+        "phone": {
+          "value": "+12125550009"
+        }
+      }
+    ]
+  },
+  {
+    "email": "james.anderson@acme-corp.com",
+    "email_verified": true,
+    "given_name": "James",
+    "family_name": "Anderson",
+    "name": "James Anderson",
+    "custom_password_hash": {
+      "algorithm": "sha256",
+      "hash": {
+        "value": "4f1396df2893f15aa008b8f7ad326df9436e960a3521d76f66795e6be5bf865f",
+        "encoding": "hex"
+      },
+      "salt": {
+        "value": "acm_010_salt",
+        "position": "prefix"
+      }
+    },
+    "user_metadata": {
+      "migrated_from": "acme_legacy",
+      "legacy_id": "ACM-010"
+    },
+    "app_metadata": {
+      "roles": [
+        "user"
+      ],
+      "migration_batch": "poc-batch-1"
+    },
+    "mfa_factors": [
+      {
+        "totp": {
+          "secret": "XKT2S5AH5MPBCQIXSJHZAF6MRHFMWCYY"
+        }
+      },
+      {
+        "email": {
+          "value": "james.anderson@acme-corp.com"
+        }
+      },
+      {
+        "phone": {
+          "value": "+12125550010"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "auth0-bulk-migration",
+  "version": "1.0.0",
+  "description": "Auth0 bulk user migration PoC",
+  "main": "migrate.js",
+  "scripts": {
+    "start": "node migrate.js"
+  },
+  "dependencies": {
+    "auth0": "^4.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
