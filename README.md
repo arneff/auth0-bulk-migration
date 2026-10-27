@@ -4,7 +4,7 @@ Proof-of-concept scripts demonstrating Auth0's [Bulk User Import API](https://au
 
 ## How it works
 
-1. Loads `users.json` (10 test users with sha256 password hashes)
+1. Loads `users.json` (10 test users with sha256 password hashes and MFA enrollments)
 2. Submits a batch to `POST /api/v2/jobs/users-imports`
 3. Polls `GET /api/v2/jobs/{id}` with exponential backoff until the job completes
 4. Enforces Auth0's **2 concurrent job limit** — waits for a slot before submitting the next batch
@@ -46,20 +46,20 @@ AUTH0_SEND_EMAIL=false
 
 ## Test users
 
-All 10 users in `users.json` share the password **`Password1!`**, stored as `sha256(salt + password)`.
+All 10 users in `users.json` share the password **`Password1!`**, stored as `sha256(salt + password)`. Each user also has one or more MFA factors pre-enrolled (TOTP, email, and/or phone), demonstrating that MFA enrollments are migrated alongside credentials.
 
-| Email | Legacy ID |
-|---|---|
-| alice.johnson@acme-corp.com | ACM-001 |
-| bob.smith@acme-corp.com | ACM-002 |
-| carol.white@acme-corp.com | ACM-003 |
-| david.brown@acme-corp.com | ACM-004 |
-| eve.davis@acme-corp.com | ACM-005 |
-| frank.miller@acme-corp.com | ACM-006 |
-| grace.wilson@acme-corp.com | ACM-007 |
-| henry.moore@acme-corp.com | ACM-008 |
-| irene.taylor@acme-corp.com | ACM-009 |
-| james.anderson@acme-corp.com | ACM-010 |
+| Email | Legacy ID | MFA factors |
+|---|---|---|
+| alice.johnson@acme-corp.com | ACM-001 | TOTP |
+| bob.smith@acme-corp.com | ACM-002 | TOTP |
+| carol.white@acme-corp.com | ACM-003 | TOTP |
+| david.brown@acme-corp.com | ACM-004 | Email |
+| eve.davis@acme-corp.com | ACM-005 | Email |
+| frank.miller@acme-corp.com | ACM-006 | Phone (SMS) |
+| grace.wilson@acme-corp.com | ACM-007 | Phone (SMS) |
+| henry.moore@acme-corp.com | ACM-008 | TOTP, Email |
+| irene.taylor@acme-corp.com | ACM-009 | TOTP, Phone (SMS) |
+| james.anderson@acme-corp.com | ACM-010 | TOTP, Email, Phone (SMS) |
 
 ## Running the scripts
 
